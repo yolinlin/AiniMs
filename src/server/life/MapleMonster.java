@@ -429,7 +429,7 @@ public class MapleMonster extends AbstractLoadedMapleLife {
             //}
             //int jingying = (int) Math.floor(Math.random()*9+1);
             attacker.getTrait(MapleTraitType.charisma).addExp(stats.getCharismaEXP(), attacker);
-            attacker.gainExpMonster(exp, true, highestDamage, pty, Class_Bonus_EXP, Equipment_Bonus_EXP, Premium_Bonus_EXP, stats.isPartyBonus(), stats.getPartyBonusRate());
+            attacker.gainExpMonster(exp * attacker.getpendantExp1(), true, highestDamage, pty, Class_Bonus_EXP, Equipment_Bonus_EXP, Premium_Bonus_EXP, stats.isPartyBonus(), stats.getPartyBonusRate());
         } 
             
         if(attacker.getClient().getChannel() == 2) {

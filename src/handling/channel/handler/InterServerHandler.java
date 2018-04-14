@@ -271,7 +271,7 @@ public class InterServerHandler {
         System.out.println("·游戏服务器信息‖玩家 [ " + c.getPlayer().getName() + " ],Lv "+c.getPlayer().getLevel()+" .进入了游戏服务器.");
         World.Broadcast.broadcastMessage(CWvsContext.serverNotice(6,"∑游戏服务器信息 ∈ 频道 "+ c.getChannel()+"  ：大家欢迎 " + c.getPlayer().getName() + "进入游戏!"));
         player.sendMacros();
-        //player.equipPendantOfSpirit1();
+        player.equipPendantOfSpirit1();
         player.showNote();
         player.sendImp();
         player.updatePartyMemberHP();
